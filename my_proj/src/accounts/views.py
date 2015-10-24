@@ -42,6 +42,7 @@ class SignUpView(bracesviews.AnonymousRequiredMixin,
 
     def form_valid(self, form):
         r = super(SignUpView, self).form_valid(form)
+        colg_name = form.cleaned_data["colg_name"]
         username = form.cleaned_data["email"]
         password = form.cleaned_data["password1"]
         user = auth.authenticate(email=username, password=password)

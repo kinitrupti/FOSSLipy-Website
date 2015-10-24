@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Projects{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="projects" %}
+{% endblock %}
+
+<!-- Benefits of the Django application -->
+{% block container %}
+
+<div id="sec1" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="lead">If interested please contact Us at: foss dot workshops at gmail dot com </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sec2" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        
+        <p class="lead">Python Basics:
+
+Python is a widely used general­purpose, high­levelprogramming language. Its design
+
+philosophy emphasizes code readability, and its syntax allows programmers to express
+
+concepts in fewer lines of code than would be possible in languages such as C++ or Java.
+
+If possible will add features
+
+Topics Will be coverd :
+
+Python Programming Language
+
+• Python Introduction
+
+• Why to use Python? Who uses Python? How it works?
+
+• Industrial Applications of Python
+
+• Basics of Python
+
+• Unique Features of Python
+
+• Oops Concepts of Python
+
+• Python in Scientific Computing
+
+• Job Opportunities and Industrial use of Python</p>
+      </div>
+    </div>
+    
+
+<div id="sec3">
+  <div class="container">
+    <div class="row">
+      <div id="map-outer" class="col-md-12">
+        <div id="address" class="col-md-4">
+
+{% endblock  %}

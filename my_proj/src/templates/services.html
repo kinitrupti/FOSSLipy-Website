@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Services{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="services" %}
+{% endblock %}
+
+<!-- Benefits of the Django application -->
+{% block container %}
+
+<div id="sec1" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="#sec2"><h1>FOSS Workshop</a></h1></a>
+        <a href="#sec3"><h1>ERP Services</a></h1></a>
+        <a href="#sec4"><h1>LMS Services</a></h1></a>
+        <a href="#sec5"><h1>E Commerce</a></h1></a>
+        <a href="#sec6"><h1>Development Services</p></a></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sec2" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+       
+      </div>
+    </div>
+  <marquee direction="left" scrollamount="20" onmouseover="this.stop();" onmouseout="this.start();">    
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="text-center"><a href="{% url 'python' %}"><img class="img-circle centered" src="http://www.sysads.co.uk/wp-content/uploads/2014/06/python-01.png" alt="profile pic"></a></div>
+        
+        
+        </div>
+      <div class="col-lg-4">
+        <div class="text-center"><a href="{% url 'latex' %}"><img class="img-circle centered" src="http://0110.be/files/attachments/365/latex_icon.png" height="150" width="150" alt="profile pic"></div></a>
+       
+ 
+        </div>
+      <div class="col-lg-4">
+        <div class="text-center"><a href="{% url 'php' %}"><img class="img-circle centered" src="http://training.linuxmantra.com/wp-content/uploads/2013/12/php.jpg" alt="profile pic"></div></a>
+       
+
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</marquee>
+
+{%endblock%}

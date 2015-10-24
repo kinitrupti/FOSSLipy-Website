@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ block.super }}Projects{% endblock %}
+
+{% block navbar-left %}
+  {% include "_navbar.html" with active_link="projects" %}
+{% endblock %}
+
+<!-- Benefits of the Django application -->
+{% block container %}
+
+<div id="sec1" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <a href="#sec2"><p class="lead"><h1>LibreOffice</a></h1></a></p>
+        <a href="#sec3"><p class="lead"><h1>Accounting Desktop Application</a></h1></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sec2" class="text-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        
+        <p class="lead">LibreOffice is a free and open source office suite, developed by The Document Foundation. It was forked from OpenOffice.org in 2010, which was an open-sourced version of the earlier StarOffice. The LibreOffice suite comprises programs for word processing, the creation and editing of spreadsheets, slideshows, diagrams and drawings, working with databases, and composing mathematical formulae.
+LibreOffice uses the international ISO/IEC standard OpenDocument file format as its native format to save documents for all of its applications (as do its OpenOffice.org cousins Apache OpenOffice and NeoOffice). The OpenDocument file format is now also supported by all major competing office suite applications (proprietary and open source). LibreOffice is also compatible with other major office suites, including Microsoft Office,[9] through a variety of import/export filters. The file formats of Microsoft Office are well supported, though some layout features and formatting attributes are handled differently in the application or are not entirely supported in the filters.[10] LibreOffice is available in 110 languages[7] and for a variety of computing platforms,[5] including Microsoft Windows, OS X (10.8 or newer), and Linux (including a LibreOffice Viewer for Android[11]). It is the default office suite of most popular Linux distributions.[12][13][14][15]
+Between January 2011 (the first stable release) and October 2011, LibreOffice was downloaded approximately 7.5 million times.[16] The project claims 120 million unique downloading addresses from May 2011 to May 2015, excluding Linux distributions, with 55 million of those being from May 2014 to May 2015.</p>
+      </div>
+    </div>
+    
+
+<div id="sec3">
+  <div class="container">
+    <div class="row">
+      <div id="map-outer" class="col-md-12">
+        <div id="address" class="col-md-4">
+
+{% endblock  %}
